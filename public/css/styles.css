@@ -1,0 +1,168 @@
+@font-face {
+    font-family: myFont;
+    src: url("/todo/public/fonts/AmaticSC-Regular.ttf");
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkseagreen;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 2em;
+    min-height: 90%;
+}
+
+input, button{
+    font-size: 20px;
+    font-family: myFont, cursive;
+    width: auto;
+    margin: 5px;
+    color: #363639;
+    padding: 7px;
+    border: 1px solid #0084c8;
+    border-radius: 4px;
+}
+
+input{
+    width: 200px;
+}
+
+#info {
+    align-items: center;
+    flex-grow: 1;
+}
+
+#info a {
+    font-size: 3em;
+    font-family: myFont, cursive;
+    text-decoration: none;
+    color: black;
+}
+
+#info > a {
+    padding: 0 1em;
+    font-size: 1.5em;
+    align-self: flex-end;
+}
+
+#info img {
+    width: 100px;
+    padding: 1em;
+}
+
+#info h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.container {
+    /* center contents */
+    min-height: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+h1.header {
+    text-align: center;
+}
+
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: myFont, cursive;
+}
+
+form {
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="submit"], button {
+    background-color: #0084c8;
+    color: white;
+    width: 4em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px grey;
+}
+
+.footer {
+    font-family: myFont, cursive;
+    border-top: 1px solid #2e6da4;
+    position: absolute;
+    bottom: 0;
+    background-color: #ecece050;
+    right: 0;
+    left: 0;
+}
+
+
+p {
+    margin: 10px;
+    text-align: center;
+}
+
+.list{
+    background-color: cornsilk;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+.tasks{
+    font-size: 20px;
+    text-align: left;
+    font-family: myFont, cursive;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.done-button{
+    display:inline-block;
+    text-align: center;
+    font-size: 0.8em;
+    float: right;
+    background-color: crimson;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px grey;
+    color: gold;
+    padding: 1px 8px;
+    border: 0;
+    opacity: 0.6;
+}
+
+.tasks li, .add-task .input{
+    margin: 4px;
+    border: 1px solid #8fbc8e;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.tasks li:hover .done-button{
+    opacity: 1;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.error {
+    font-family: myFont, cursive;
+    font-size: 20px;
+    color: #FF0000;
+}
